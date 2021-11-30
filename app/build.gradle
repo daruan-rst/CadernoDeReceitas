@@ -49,8 +49,6 @@ android {
     buildFeatures {
         viewBinding true
     }
-}
-
 String roomVersion = "2.3.0"
 
 dependencies {
@@ -64,7 +62,6 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
 
-
     //room database//
 //    implementation 'android.room:room-compiler:2.2.5'
 //    kapt 'androidx.room:room-compiler:2.3.0'
@@ -72,11 +69,12 @@ dependencies {
 //    implementation 'com.makeramen:roundedimageview:2.3.0'
 
 
-
     implementation("androidx.room:room-runtime:$roomVersion")
     annotationProcessor("androidx.room:room-compiler:$roomVersion")
 
     // To use Kotlin annotation processing tool (kapt)
     kapt("androidx.room:room-compiler:$roomVersion")
+
+    }
 
 }

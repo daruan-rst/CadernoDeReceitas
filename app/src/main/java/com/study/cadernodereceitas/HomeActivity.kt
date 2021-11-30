@@ -22,17 +22,17 @@ class HomeActivity : AppCompatActivity() {
 
 
         // Dummy entries for test purpose
-        arrayMainCategory.add(Recipe(1,"Pato ao molho de laranja"))
+        arrayMainCategory.add(Recipe(1,"Pato assado"))
         arrayMainCategory.add(Recipe(2,"Bolo de fubá"))
         arrayMainCategory.add(Recipe(3,"Pão de queijo"))
         arrayMainCategory.add(Recipe(4,"Brigadeiro"))
 
         mainCategoryAdapter.setData(arrayMainCategory)
 
-        arraySubCategory.add(Recipe(1,"Pão Australiano"))
-        arraySubCategory.add(Recipe(2,"Coxinha de Frango"))
-        arraySubCategory.add(Recipe(3,"Tempurá Udon"))
-        arraySubCategory.add(Recipe(4,"Panetone"))
+        arraySubCategory.add(Recipe(1,"Massas"))
+        arraySubCategory.add(Recipe(2,"Saladas"))
+        arraySubCategory.add(Recipe(3,"Japonesa"))
+        arraySubCategory.add(Recipe(4,"Brasileira"))
 
         subCategoryAdapter.setData(arraySubCategory)
 

@@ -23,10 +23,11 @@
                 android:text="Todas as Receitas"
                 android:textSize="20sp"
                 android:textColor="@color/black"
-                android:fontFamily="@font/Gilroy-Bold"
+                android:fontFamily="@font/gilroy_bold"
                 android:padding="10dp"/>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/search_card"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10sp"
@@ -58,12 +59,13 @@
                 tools:listitem="@layout/item_rv_main_category"/>
 
             <TextView
+                android:id="@+id/category_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Categoria"
                 android:textSize="15sp"
                 android:textColor="@color/black"
-                android:fontFamily="@font/Gilroy-Bold"
+                android:fontFamily="@font/gilroy_bold"
                 android:paddingStart="10dp"/>
 
             <androidx.recyclerview.widget.RecyclerView

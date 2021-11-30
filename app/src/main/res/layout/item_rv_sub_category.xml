@@ -8,6 +8,7 @@
     tools:context=".SplashActivity">
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/card_sub"
         android:layout_width="180sp"
         android:layout_height="260sp"
         app:cardBackgroundColor="@color/laranja"
@@ -36,7 +37,7 @@
             android:id="@+id/tv_dish_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/Gilroy-Light"
+            android:fontFamily="@font/gilroy_light"
             android:maxLines="2"
             android:paddingStart="10sp"
             android:text="[nome da receita]"
