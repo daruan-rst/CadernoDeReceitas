@@ -1,11 +1,11 @@
-package com.study.cadernodereceitas.adapter
+package com.study.cadernodereceitas.Adapter
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.study.cadernodereceitas.R
-import com.study.cadernodereceitas.entities.Recipe
+import com.study.cadernodereceitas.Entities.Recipe
 import kotlinx.android.synthetic.main.item_rv_main_category.view.tv_dish_name
 
 class SubCategoryAdapter : RecyclerView.Adapter<SubCategoryAdapter.RecipeViewHolder>() {

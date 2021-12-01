@@ -1,20 +1,19 @@
-package com.study.cadernodereceitas.entities
+package com.study.cadernodereceitas.Entities
 
 import androidx.room.*
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
-import com.study.cadernodereceitas.entities.converter.CategoryListConverter
+import com.study.cadernodereceitas.Entities.Converter.CategoryListConverter
 
 @Entity(tableName = "Category")
 data class Category(
-
     @PrimaryKey(autoGenerate = true)
     var id : Int,
 
+    @ColumnInfo(name ="categoryItems")
     @Expose
-    @SerializedName("categoryItems")
-    @ColumnInfo(name ="idCategory")
+    @SerializedName("categories")
     @TypeConverters(CategoryListConverter::class)
-    val categoryItems: List<CategoryItem>
+    var categoryItems : List<CategoryItem>? = null
 )
 

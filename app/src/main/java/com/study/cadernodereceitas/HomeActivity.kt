@@ -1,15 +1,14 @@
 package com.study.cadernodereceitas
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.study.cadernodereceitas.adapter.MainCategoryAdapter
-import com.study.cadernodereceitas.adapter.SubCategoryAdapter
-import com.study.cadernodereceitas.entities.Recipe
+import com.study.cadernodereceitas.Adapter.MainCategoryAdapter
+import com.study.cadernodereceitas.Adapter.SubCategoryAdapter
+import com.study.cadernodereceitas.Entities.Recipe
 import kotlinx.android.synthetic.main.activity_home.*
 
 
-class HomeActivity : AppCompatActivity() {
+class HomeActivity : BaseActivity() {
 
     var arrayMainCategory = ArrayList<Recipe>()
     var arraySubCategory = ArrayList<Recipe>()

@@ -1,4 +1,4 @@
-package com.study.cadernodereceitas.entities
+package com.study.cadernodereceitas.Entities
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
