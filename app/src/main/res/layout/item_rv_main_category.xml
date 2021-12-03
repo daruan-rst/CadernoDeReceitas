@@ -40,7 +40,7 @@
                 android:maxEms="10"
                 android:maxLines="2"
                 android:padding="10sp"
-                android:text="[nome da receita]"
+                android:text="[nome da categoria]"
                 android:textColor="@color/black"
                 android:textSize="10sp" />
 

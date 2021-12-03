@@ -1,17 +1,29 @@
 package com.study.cadernodereceitas.adapter
 
+import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.study.cadernodereceitas.R
+import com.study.cadernodereceitas.ReceitaActivity
 import com.study.cadernodereceitas.entities.Recipe
 import kotlinx.android.synthetic.main.item_rv_main_category.view.tv_dish_name
 
-class SubCategoryAdapter : RecyclerView.Adapter<SubCategoryAdapter.RecipeViewHolder>() {
+class SubCategoryAdapter(private val context: Context) : RecyclerView.Adapter<SubCategoryAdapter.RecipeViewHolder>() {
 
-    class RecipeViewHolder(view: View) :RecyclerView.ViewHolder(view){
+    class RecipeViewHolder(private val view: View) :RecyclerView.ViewHolder(view){
 
+        fun vincular(context: Context){
+            view.setOnClickListener{
+                val intent = Intent(context, ReceitaActivity::class.java)
+                context.startActivity(intent)
+                val textCardReceita: TextView = view.findViewById(R.id.dish)
+                textCardReceita.text
+            }
+        }
     }
 
     var arraySubCategory = ArrayList<Recipe>()
@@ -22,6 +34,7 @@ class SubCategoryAdapter : RecyclerView.Adapter<SubCategoryAdapter.RecipeViewHol
 
     override fun onBindViewHolder(holder: RecipeViewHolder, position: Int) {
         holder.itemView.tv_dish_name.text = arraySubCategory[position].recipeName
+        holder.vincular(context)
     }
 
     override fun getItemCount(): Int {

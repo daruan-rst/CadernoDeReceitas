@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReceitaActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Brigadeiro"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="20dp"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/editTextIngredientes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="-1 lata de leite condensado \n-2 col. sopa de cacau em pó
+        \n-1 col. sopa de manteiga \n-1 xíxara de chá de chocolate granulado"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="20dp" />
+
+    <EditText
+        android:id="@+id/editTextModoDePreparo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text="- Em uma panela, coloque o Leite condensado, com o chocolate em pó e a manteiga \n
+-Misture bem e leve ao fogo baixo, mexendo sempre até desprender do fundo da panela(cerca de 10 minutos)\n
+-Retire do fogo, passe para um prato untado com manteiga e deixe esfriar. \n
+-Com as mãos untadas, enrole em bolinhas e passe-as no granulado. Sirva em forminhas de papel"
+        app:layout_constraintTop_toBottomOf="@+id/editTextIngredientes"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="20dp" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
