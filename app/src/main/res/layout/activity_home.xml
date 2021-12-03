@@ -23,7 +23,7 @@
                 android:text="Todas as Receitas"
                 android:textSize="20sp"
                 android:textColor="@color/black"
-                android:fontFamily="@font/Gilroy-Bold"
+                android:fontFamily="@font/gilroy_bold"
                 android:padding="10dp"/>
 
             <androidx.cardview.widget.CardView
@@ -63,7 +63,7 @@
                 android:text="Categoria"
                 android:textSize="15sp"
                 android:textColor="@color/black"
-                android:fontFamily="@font/Gilroy-Bold"
+                android:fontFamily="@font/gilroy_bold"
                 android:paddingStart="10dp"/>
 
             <androidx.recyclerview.widget.RecyclerView
